@@ -1,19 +1,14 @@
-import EditButton from "./EditButton.jsx";
-import DeleteButton from "./DeleteButton.jsx";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faXmark, faPenToSquare} from '@fortawesome/free-solid-svg-icons'
 
-export default function TodoList({ todoItem, todo, onTodoItemChange, onTodoChange }) {
+export default function TodoList({task}) {
   return (
-    <ul>
-      {todo.map((item) => (
-        <li key={item.id}>
-          {item.name} <EditButton />{" "}
-          <DeleteButton
-            onTodoChange={onTodoChange}
-            todo={todo}
-            id={item.id}
-          />
-        </li>
-      ))}
-    </ul>
+      <div>
+        <p>{task.task}</p>
+        <div>
+      <FontAwesomeIcon icon={faPenToSquare} />
+        <FontAwesomeIcon icon={faXmark} />
+      </div>
+    </div>
   );
 }
