@@ -1,0 +1,39 @@
+.hero {
+    color:rgb(51, 48, 48);
+}
+
+
+.input {
+    padding: .5em 1em;
+    outline: none;
+}
+
+.btn {
+    padding: .5em 1em;
+    margin-left: .3em;
+}
+ 
+
+.flexRow {
+    margin-top: 1em;
+    padding: .5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .5em;
+  /* color: #fff; */
+  background-color: rgb(173, 168, 168);
+  border-radius: 5px;
+  max-width: 30%;
+}
+
+.icon {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5em; 
+}
+
+.completed {
+  text-decoration: line-through;
+}
