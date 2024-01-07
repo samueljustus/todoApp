@@ -18,10 +18,11 @@ export default function TodoList({ task, toggleIsCompleted, setTodos, todos }) {
         <FontAwesomeIcon
           icon={faPenToSquare}
           onClick={() => {
-            console.log("clicked");
             setTodos(
               todos.map((todo) =>
-                todo.id === task.id ? { ...todo, isEditing: !todo.isEditing } : todo
+                todo.id === task.id
+                  ? { ...todo, isEditing: !todo.isEditing }
+                  : todo
               )
             );
           }}

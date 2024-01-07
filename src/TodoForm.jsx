@@ -8,7 +8,8 @@ export default function TodoForm({ value, setValue, todos, setTodos }) {
         setValue("");
       }}
     >
-      <input className="input"
+      <input
+        className="input"
         type="text"
         placeholder="add new task"
         value={value}

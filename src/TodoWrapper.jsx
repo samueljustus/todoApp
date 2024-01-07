@@ -32,8 +32,12 @@ export default function TodoWrapper() {
       />
       {todos.map((todo, index) =>
         todo.isEditing ? (
-          <EditTodo key={index} todos={todos} setTodos={setTodos} id={todo.id} />
-          
+          <EditTodo
+            key={index}
+            todos={todos}
+            setTodos={setTodos}
+            id={todo.id}
+          />
         ) : (
           <TodoList
             task={todo}
